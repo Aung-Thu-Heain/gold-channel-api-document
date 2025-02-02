@@ -1,13 +1,14 @@
 # Gold channel api document
 ## Table of Contents
 - [Authentication](#authentication)
-  - [Google Login](#google_login)
-  - [Mobile Login](#mobile_login)
-- [Home Page](#home_page)
+  - [Google Login](#google-login)
+  - [Mobile Login](#mobile-login)
+- [Home Page](#home-page)
 
 
 ## Authentication
 
+### Google Login
 ### Google Login Redirect
 
 #### URL
@@ -40,10 +41,10 @@ Google callback with token to authenticate
 #### Show validarion error
 ```json  
 {
-    "message": "The callback_token field is required.",
-    "errors": {
+    "success": false,
+    "message": {
         "callback_token": [
-            "The callback_token  field is required."
+            "The callback token field is required."
         ]
     }
 }
@@ -57,4 +58,12 @@ Google callback with token to authenticate
   "token": "your_bear_token"
 }
 ```
+
+### Mobile Login
+
+## Home Page
+
+
+
+
 
