@@ -50,4 +50,11 @@ Google callback with token to authenticate
 ```
 
 #### Response (status 200)
-- 
+```json
+{
+  "success": true,
+  "message": "Login successful",
+  "token": "your_bear_token"
+}
+```
+
