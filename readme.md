@@ -1,12 +1,15 @@
 # Gold channel api document
 ## Table of Contents
-- [Authentication](#authentication)
+- [Authentication]
   - [Google Login](#google-login)
   - [Mobile Login](#mobile-login)
-- [Home Page](#home-page)
+- [Home]
+  - [Banner](#banner)
+  - [Recently Add]('recently-add')
+  - [Top rated movies](#top-rated-items)
 
 
-## Authentication
+
 
 ### Google Login
 ### Google Login Redirect
@@ -16,15 +19,6 @@
 
 #### Description
 Google redirect url and get token to authenticate
-
-#### Request parameters
-- 
-
-#### Show validarion error
-- 
-
-#### Response (status 200)
-- 
 
 
 ### Google Login Handel callback
@@ -61,7 +55,59 @@ Google callback with token to authenticate
 
 ### Mobile Login
 
-## Home Page
+
+
+
+
+### Banner
+#### URL
+`POST /home-banner`
+
+#### Description
+Home banner
+
+#### Response (status 200)
+```json
+{
+  "success": true,
+  "message": "Banner list reterived successfully",
+  "data": "banner_list"
+}
+```
+
+
+### Recently Add
+#### URL
+`POST /recently-add`
+
+#### Description
+Recently added videos and tv shows
+
+#### Response (status 200)
+```json
+{
+  "success": true,
+  "message": "Recently added items reterived successfully",
+  "data": "item_list"
+}
+```
+
+
+### Top rated items
+#### URL
+`POST /top-rated/{type}`
+
+#### Description
+type = movie | tvshow
+
+#### Response (status 200)
+```json
+{
+  "success": true,
+  "message": "Recently added {type} reterived successfully",
+  "data": "item_list"
+}
+```
 
 
 
