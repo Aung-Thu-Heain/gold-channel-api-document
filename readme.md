@@ -1,21 +1,22 @@
 # Gold channel api document
 ## Table of Contents
-- [Authentication]
+- Authentication
   - [Google Login](#google-login)
   - [Mobile Login](#mobile-login)
-- [Home]
+  - [Logout](#logout)
+- Home
   - [Banner](#banner)
-  - [Recently Add]('recently-add')
+  - [Recently Add]('#recently-add')
   - [Top rated movies](#top-rated-items)
 
 
 
 
-### Google Login
-### Google Login Redirect
+
+## Google Login
 
 #### URL
-`POST /api/v1/auth/google`
+`GET /api/v1/auth/google`
 
 #### Description
 Google redirect url and get token to authenticate
@@ -24,7 +25,7 @@ Google redirect url and get token to authenticate
 ### Google Login Handel callback
 
 #### URL
-`POST /auth/google/callback`
+`GET /auth/google/callback`
 
 #### Description
 Google callback with token to authenticate
@@ -53,13 +54,28 @@ Google callback with token to authenticate
 }
 ```
 
-### Mobile Login
+## Mobile Login
 
 
+## Logout
+### URL
+`POST /logout`
+
+#### Description
+Logout user
+
+#### Headers
+- `Authorization` : Bearer Token
+#### Response (status 200)
+```json
+{
+  "success": true,
+  "message": "Logout successfull",
+}
+```
 
 
-
-### Banner
+## Banner
 #### URL
 `POST /home-banner`
 
@@ -76,7 +92,7 @@ Home banner
 ```
 
 
-### Recently Add
+## Recently Add
 #### URL
 `POST /recently-add`
 
@@ -93,7 +109,7 @@ Recently added videos and tv shows
 ```
 
 
-### Top rated items
+## Top rated items
 #### URL
 `POST /top-rated/{type}`
 
