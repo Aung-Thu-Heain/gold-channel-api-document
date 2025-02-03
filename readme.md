@@ -7,15 +7,14 @@
 - Home
   - [Banner](#banner)
   - [Recently Add](#recently-add)
-  - [Top rated movies](#top-rated-items)
-
+  - [Top rated items](#top-rated-items)
 
 
 
 
 ## Google Login
 
-#### URL
+URL
 `GET /api/v1/auth/google`
 
 #### Description
@@ -77,7 +76,7 @@ Logout user
 
 ## Banner
 #### URL
-`POST /home-banner`
+`GET /home-banner`
 
 #### Description
 Home banner
@@ -94,7 +93,7 @@ Home banner
 
 ## Recently Add
 #### URL
-`POST /recently-add`
+`GET /recently-add`
 
 #### Description
 Recently added videos and tv shows
@@ -111,7 +110,7 @@ Recently added videos and tv shows
 
 ## Top rated items
 #### URL
-`POST /top-rated/{type}`
+`GET /top-rated/{type}`
 
 #### Description
 type = movie | tvshow
