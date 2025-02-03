@@ -6,7 +6,7 @@
   - [Logout](#logout)
 - Home
   - [Banner](#banner)
-  - [Recently Add]('#recently-add')
+  - [Recently Add](#recently-add)
   - [Top rated movies](#top-rated-items)
 
 
